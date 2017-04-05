@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChocolateBarSugarViewController">
+            <connections>
+                <outlet property="bottomView" destination="63" id="82"/>
+                <outlet property="bubbleBig1" destination="96" id="103"/>
+                <outlet property="bubbleBig2" destination="92" id="104"/>
+                <outlet property="bubbleSmall1" destination="93" id="105"/>
+                <outlet property="bubbleSmall2" destination="94" id="106"/>
+                <outlet property="chocolateBar" destination="64" id="74"/>
+                <outlet property="liquid" destination="73" id="75"/>
+                <outlet property="milkBottom" destination="59" id="83"/>
+                <outlet property="nextButton" destination="67" id="76"/>
+                <outlet property="spoon" destination="91" id="98"/>
+                <outlet property="stiredImage" destination="97" id="101"/>
+                <outlet property="sugarPack" destination="71" id="77"/>
+                <outlet property="sugarPouring" destination="72" id="78"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background3_1.png" id="60">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="fireOff.png" id="62">
+                    <rect key="frame" x="44" y="401" width="233" height="85"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="fireOn.png" id="61">
+                    <rect key="frame" x="44" y="401" width="233" height="85"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" id="63">
+                    <rect key="frame" x="0.0" y="516" width="320" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="70">
+                            <rect key="frame" x="59" y="6" width="64" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" backgroundImage="btnNavbarResetOn.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="ResetButtonPreseed:" destination="-1" eventType="touchUpInside" id="81"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="67">
+                            <rect key="frame" x="271" y="3" width="41" height="43"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" backgroundImage="arrowNavbarRightOn.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="disabled" backgroundImage="arrowNavbarRightOff.png"/>
+                            <state key="selected" backgroundImage="arrowNavbarRightOn.png"/>
+                            <state key="highlighted" backgroundImage="arrowNavbarRightOn.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="NextPage:" destination="-1" eventType="touchUpInside" id="80"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="66">
+                            <rect key="frame" x="10" y="3" width="41" height="43"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" backgroundImage="arrowNavbarLeftOn.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="BackButtonPressed:" destination="-1" eventType="touchUpInside" id="79"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="textContainer.png" id="68">
+                            <rect key="frame" x="127" y="6" width="137" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="labelScreen2.1.png" id="69">
+                            <rect key="frame" x="117" y="6" width="158" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="emptyPot.png" id="65">
+                    <rect key="frame" x="12" y="296" width="308" height="163"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="syrupFilledPot.png" id="59">
+                    <rect key="frame" x="12" y="296" width="308" height="163"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView contentMode="scaleToFill" image="chunk1.png" id="64">
+                    <rect key="frame" x="204" y="111" width="126" height="67"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="sugarPack.png" id="71">
+                    <rect key="frame" x="163" y="131" width="45" height="89"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="flavourPouringL.png" id="72">
+                    <rect key="frame" x="127" y="186" width="55" height="245"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="sugarfilledPot2.png" id="73">
+                    <rect key="frame" x="132" y="400" width="40" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView contentMode="scaleToFill" image="spoon.png" id="91">
+                    <rect key="frame" x="146" y="163" width="48" height="195"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" image="flavourMixtureBack2.png" id="97">
+                    <rect key="frame" x="54" y="347" width="206" height="96"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bubbleBig.png" id="92">
+                    <rect key="frame" x="169" y="417" width="13" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bubbleSmall.png" id="93">
+                    <rect key="frame" x="95" y="423" width="13" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bubbleSmall.png" id="94">
+                    <rect key="frame" x="192" y="423" width="13" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bubbleBig.png" id="96">
+                    <rect key="frame" x="104" y="412" width="13" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrowNavbarLeftOn.png" width="36" height="37"/>
+        <image name="arrowNavbarRightOff.png" width="36" height="37"/>
+        <image name="arrowNavbarRightOn.png" width="36" height="37"/>
+        <image name="background3_1.png" width="320" height="480"/>
+        <image name="btnNavbarResetOn.png" width="64" height="37"/>
+        <image name="bubbleBig.png" width="13" height="14"/>
+        <image name="bubbleSmall.png" width="13" height="14"/>
+        <image name="chunk1.png" width="126" height="67"/>
+        <image name="emptyPot.png" width="308" height="163"/>
+        <image name="fireOff.png" width="216" height="76"/>
+        <image name="fireOn.png" width="216" height="76"/>
+        <image name="flavourMixtureBack2.png" width="205" height="93"/>
+        <image name="flavourPouringL.png" width="64" height="258"/>
+        <image name="labelScreen2.1.png" width="165" height="40"/>
+        <image name="spoon.png" width="48" height="195"/>
+        <image name="sugarPack.png" width="61" height="97"/>
+        <image name="sugarfilledPot2.png" width="54" height="41"/>
+        <image name="syrupFilledPot.png" width="308" height="163"/>
+        <image name="textContainer.png" width="163" height="39"/>
+    </resources>
+</document>
